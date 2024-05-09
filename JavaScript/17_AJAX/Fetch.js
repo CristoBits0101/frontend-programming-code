@@ -4,7 +4,7 @@ fetch('http://ejemplo.com/api/posts', {
 })
 .then(response => response.json()) // Convertir la respuesta en formato JSON
 .then(data => {
-  // Manejar los datos obtenidos.
+  // Manejar los datos obtenidos.@api/post/
 });
 
 // 2. Enviar datos de actualización con una solicitud PUT
@@ -24,7 +24,7 @@ fetch('http://ejemplo.com/api/posts/1', {
 });
 
 // 3. Enviar datos de creación con una solicitud POST
-fetch('http://ejemplo.com/api/posts', {
+fetch('http://ejemplo.com/createPost', {
   method: 'POST', // Método POST para enviar datos de creación
   headers: {
     'Content-Type': 'application/json' // Cabecera para indicar el tipo de contenido (JSON)
@@ -40,7 +40,7 @@ fetch('http://ejemplo.com/api/posts', {
 });
 
 // 4. Eliminar datos con una solicitud DELETE
-fetch('http://ejemplo.com/api/posts/1', {
+fetch('http://ejemplo.com/createFolder/1', {
   method: 'DELETE' // Método DELETE para eliminar datos
 })
 .then(response => response.json()) // Convertir la respuesta en formato JSON
