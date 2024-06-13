@@ -1,0 +1,123 @@
+section {
+  width: 100%;
+}
+
+.section-about {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "personal-image content";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  box-sizing: border-box;
+}
+
+.personal-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  grid-area: personal-image;
+  padding: 2.5rem;
+  box-sizing: border-box;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  grid-area: content;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  line-height: 1.5rem;
+  gap: 1rem;
+}
+
+.personal-image img {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 15rem;
+  box-sizing: border-box;
+}
+
+.content h1 {
+  font-size: 2.75rem;
+  font-family: "Gentium Plus", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: justify;
+  box-sizing: border-box;
+  color: #596079;
+  letter-spacing: 0.05rem;
+}
+
+.content h2 {
+  font-family: "Macondo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  text-align: justify;
+  letter-spacing: 0.05rem;
+  margin-bottom: 1rem;
+  color: #8fa4c3;
+}
+
+.content p {
+  font-size: 1.2rem;
+  text-align: justify;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .section-about {
+    display: grid;
+    grid-template-areas:
+      "personal-image"
+      "content";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .personal-image img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 15rem;
+    box-sizing: border-box;
+  }
+
+  .content h1 {
+    font-family: "Frank Ruhl Libre";
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    box-sizing: border-box;
+    color: #b8c6e3;
+    letter-spacing: 0.025rem;
+    margin: 0 auto;
+  }
+
+  .content h2 {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0 auto 1rem auto;
+  }
+
+  .content p {
+    font-size: 1.1rem;
+    text-align: justify;
+    box-sizing: border-box;
+    line-height: 1.5;
+    margin: 0 auto;
+  }
+
+  .personal-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
